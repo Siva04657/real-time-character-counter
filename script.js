@@ -1,31 +1,12 @@
-/*function Count(){
-    var a=document.getElementById("id3").value;
-    var b=a.length;
-    
-    if(b<=50){
-        document.getElementById('g1').innerHTML=b;
-        document.getElementById('g2').innerHTML=50-b;
-    }
-
-    else{
-        alert('Character limit exceeded');
-    }
-
-}
-*/
-
 function Count() {
     var textarea = document.getElementById("id3");
     var counter1 = document.getElementById('g1');
     var counter2 = document.getElementById('g2');
-
     var a = textarea.value;
     var b = a.length;
-
     if (b <= 50) {
         counter1.innerHTML = b;
         counter2.innerHTML = 50 - b;
-
         
         if (b === 50) {
             alert('Character limit exceeded');
