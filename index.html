@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Cormorant+Infant:wght@500&display=swap');
+
+        @media only screen and (min-width:768px){
+            .container{
+                width:80%;
+                margin: 0 auto;
+            }
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        #idb {
+            position: absolute;
+            width: 70%;
+            height: 45px;
+            background-color: transparent;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: "Cormorant Infant", sans-serif;
+            font-weight: bold;
+            bottom: 20px;
+            left: 15%;
+            border:2px solid white;
+            color:white;
+        }
+
+        #idb:hover {
+            background-color: rgb(5, 246, 73);
+            color:black;
+        }
+
+    /*Give h2 tag with text "Lets Optimise The text" as transparent on top of video in the page:*/
+        h2 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(227, 222, 222);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 150px;
+            font-weight: bold;
+            text-align: center;
+            
+
+        }
+    </style>
+</head>
+<body>
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="/PROGRAMS/original/WhatsApp Video 2023-12-21 at 14.44.28_c9b624e5.mp4" type="video/mp4">
+    </video>
+    <h2>Let's Optimize The Text</h2>
+    <input type="button" id="idb" value="Move to Real-Time Character Counter" onclick="window.location.href='index2.html'">
+</body>
+</html>
